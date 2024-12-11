@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+ <!-- bootstrap-link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- css and root link  -->
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- hero section by sahwag -->
+    <section class="hero bg-img">
+        <nav class="pt-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <!-- <img src="./assets/images/svg/SaintShiba.svg" alt="thanks" /> -->
+                         <div class="svg">
+                            <img src="/assets/image/svg/bill-svg.svg" alt="">
+                         </div>
+                    </div>
+                    <input type="checkbox" id="menuIcon" hidden />
+                    <label for="menuIcon" id="myButton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="d-flex gap-24 mb-0 p-0 menuLink align-items-center">
+                        <li><a class="menu-links" href="#">About</a></li>
+                        <li><a class="menu-links" href="#">How It Works</a></li>
+                        <li><a class="menu-links" href="#">Services</a></li>
+                        <li><a class="menu-links" href="#">Testimonials</a></li>
+                        <li><a class="menu-links" href="#">Why Us</a></li>
+                        <li><a class="menu-links" href="#">FAQ</a></li>
+                          <button class="btn lg-d-block display-none">
+                        <span>Get Started</span>
+                        <span class="svg">
+                       <img src="./assets/image/svg/iconoir_arrow.svg" alt="">
+                        </span>
+                    </button>
+                    </ul>
+                    <button class="d-flex align-items-center gap-1 btn lg-d-none">
+                        Get Started
+                        <div class="svg">
+                            <img src="./assets/image/svg/iconoir_arrow.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="container">  
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="box-parent">
+                    <div class="box">
+                    <h1 class="heading">
+                        Easily Compare <span class="bold"> Energy, Gas, and Internet </span>Plans
+                    </h1>
+                    <p class="para max-w-506 pt-4">
+                        Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.
+                    </p>
+                    <label class="d-flex align-items-center w-75 justify-content-between label-box">
+                    <input type="text" placeholder="Start typing your address" class="input-text">
+                            <button class="d-flex align-items-center gap-1 btn bg-blue hover-color md-margin-20">
+                        Compare
+                        <div class="svg">
+                            <img src="./assets/image/svg/iconoir_arrow-tr-white.svg" alt="">
+                        </div>
+                    </button>
+                    </label>
+                    </div>
+                    <h3 class="bottom-text">
+                        More than <span class="blue-color">80,000+</span> companies trust bill central 
+                    </h3>
+                </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="image">
+                        <img class="w-100" src="./assets/image/girl-img.png" alt="girl-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bootstrap-script-link  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <!-- fixed toggle btn  -->
+        <script>
+            let isFixed = false; // Track the current position state
+
+document.getElementById('myButton').addEventListener('click', function() {
+    if (isFixed) {
+        // If currently fixed, change to absolute
+        this.style.position = 'absolute';
+        this.style.top = '30px'; // Reset top
+        this.style.left = 'initial'; // Reset left
+        this.style.bottom = '20px'; // Position it 20px from the bottom
+        this.style.right = '15px'; // Position it 20px from the right
+    } else {
+        // If currently absolute, change to fixed
+        this.style.position = 'fixed';
+        this.style.top = '30px'; // Position it 20px from the top
+        this.style.right = '15px'; // Position it 20px from the right
+    }
+    isFixed = !isFixed; // Toggle the state
+});
+        </script>
+ 
+</body>
+
+</html>
+
+
+
+
+
+
