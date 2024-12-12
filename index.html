@@ -10,7 +10,23 @@
     <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" href="./assets/image/svg/Screen Shot 2024-10-09 at 12.47.58 pm 1 (1) 1.svg" type="image/x-icon">
+  <!-- slider link  -->
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -30,12 +46,12 @@
                         <span></span>
                     </label>
                         <ul class="d-flex gap-24 mb-0 p-0 menuLink align-items-center">
-                        <li><a class="menu-links" href="#">About</a></li>
-                        <li><a class="menu-links" href="#">How It Works</a></li>
-                        <li><a class="menu-links" href="#">Services</a></li>
-                        <li><a class="menu-links" href="#">Testimonials</a></li>
-                        <li><a class="menu-links" href="#">Why Us</a></li>
-                        <li><a class="menu-links" href="#">FAQ</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Why Us</a></li>
+                        <li><a href="#">FAQ</a></li>
                           <button class="btn d-flex gap-3 align-items-center d-none d-block">
                         <span>Get Started</span>
                         <span class="svg">
@@ -53,7 +69,7 @@
             </div>
         </nav>
         <div class="container">  
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="col-12 col-xl-6">
                     <div class="box-parent">
                     <div class="box">
@@ -78,14 +94,76 @@
                     </h3>
                 </div>
                 </div>
-                <div class="col-12 col-xl-6">
-                    <div class="image">
-                        <img class="w-100" src="./assets/image/girl-img.png" alt="girl-img">
+                <div class="col-12 col-xl-5">
+                    <div class="image w-558">
+                        <img class="w-100 z-1" src="./assets/image/girl-img.png" alt="girl-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- slider  -->
+     <section>
+        <div class="container mt-202">
+             <div class="slider">
+                <div class="svg-1">
+                    <img src="./assets/image/svg/slider-img-1.svg" alt="">
+                </div>
+                   <div class="svg-1">
+                    <img src="./assets/image/svg/slider-img-2.svg" alt="">
+                </div>
+                   <div class="svg-1">
+                    <img src="./assets/image/svg/slider-img-3.svg" alt="">
+                </div>
+                   <div class="svg-1">
+                    <img src="./assets/image/svg/slider-img-4.svg" alt="">
+                </div>
+                   <div class="svg-1">
+                    <img src="./assets/image/svg/slider-img-5.svg" alt="">
+                </div>
+                   <div class="svg-1">
+                    <img src="./assets/image/svg/slider-img-6.svg" alt="">
+                </div>
+                   <div class="svg-1">
+                    <img src="./assets/image/svg/slider-img-7.svg" alt="">
+                </div>
+             </div>
+        </div>
+     </section>
+     <!-- section-3  -->
+      <section>
+        <div class="container m-162">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6">
+                    <div class="picture">
+                        <img class="w-100" src="./assets/image/two-person-img.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="heading font-48 line-height color-black max-w-409">
+                        <span class="bold font-48">Switching Energy</span> Made Simple
+                    </h2>
+                    <p class="para color-black pt-16">
+                        Say goodbye to confusing energy plans! We simplify the process by providing clear and competitive electricity and gas recommendations. Whether you're moving or just seeking a better deal, our platform connects you with the best energy providers quickly and easily, helping you save on energy bills.
+                    </p>
+                    <h3 class="heading-3">
+                        Benefits of Comparing Energy Plans
+                    </h3>
+                    <ul class="para color-black pt-28 d-flex flex-col gap-8 pl-20">
+                        <li>Save money by finding cheaper deals.</li>
+                        <li>Get better customer service.</li>
+                        <li>Explore greener, more sustainable energy options.</li>
+                    </ul>
+                    <button class="d-flex align-items-center gap-1 btn bg-blue w-auto hover-color mt-42">
+                        Compare With Us
+                        <div class="svg">
+                            <img src="./assets/image/svg/iconoir_arrow-tr-white.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </section>
         <!-- fixed toggle btn  -->
         <script>
             let isFixed = false; // Track the current position state
@@ -107,7 +185,71 @@ document.getElementById('myButton').addEventListener('click', function() {
     isFixed = !isFixed; // Toggle the state
 });
         </script>
+  <!-- slider link  -->
  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- slider float link -->
+   <script>
+    
+$('.slider').slick({
+        slidesToShow: 7,
+        autoplay: true,
+        autoplaySpeed: Infinity,
+        dots: false,
+        infinite: true,
+        speed: 6000,
+        cssEase: "linear",
+  responsive: [
+       {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 6
+      }
+    },
+  {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 5
+      }
+    },
+       {
+      breakpoint: 576,
+      settings: {
+        arrows: false,
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 3
+      }
+    },
+      {
+      breakpoint: 385,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+   </script>
 </body>
 
 </html>
