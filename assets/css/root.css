@@ -10,25 +10,23 @@
 @media (max-width:768px) {
     :root {
         --fs-38: 33px;
+        --fs-48: 43px;
         --fs-64: 56px;
-        --fs-md: 16px;
-        --fs-lg: 18px;
-        --fs-xl: 22px;
     }
 }
 
 @media (max-width:576px) {
     :root {
         --fs-38: 30px;
+        --fs-48: 38px;
          --fs-64: 48px;
-        --fs-lg: 16px;
-        --fs-xl: 18px; 
     }
 }
 
 @media (max-width:400px) {
     :root {
         --fs-38: 30px;
-         --fs-64: 35px;
+        --fs-48:35px;
+         --fs-64: 33px;
     }
 }
