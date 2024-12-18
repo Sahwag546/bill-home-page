@@ -1,5 +1,6 @@
 :root{
     --fs-16:16px;
+    --fs-32:32px;
     --fs-38:38px;
     --fs-48:48px;
     --fs-64:64px;
@@ -9,6 +10,7 @@
 
 @media (max-width:768px) {
     :root {
+        --fs-32:25px;
         --fs-38: 33px;
         --fs-48: 43px;
         --fs-64: 56px;
