@@ -1,34 +1,39 @@
 :root{
-    --fs-16:16px;
-    --fs-32:32px;
-    --fs-38:38px;
-    --fs-48:48px;
-    --fs-64:64px;
+    --fs-sm:16px;
+    --fs-md:32px;
+    --fs-lg:38px;
+    --fs-xl:48px;
+    --fs-xxl:64px;
     --fw-400:400;
     --fw-700:700;
+}
+@media (max-width:1300px) {
+    :root{
+        --fs-md:24px;
+    }
 }
 
 @media (max-width:768px) {
     :root {
-        --fs-32:25px;
-        --fs-38: 33px;
-        --fs-48: 43px;
-        --fs-64: 56px;
+        
+        --fs-lg: 33px;
+        --fs-xl: 43px;
+        --fs-xxl: 56px;
     }
 }
 
 @media (max-width:576px) {
     :root {
-        --fs-38: 30px;
-        --fs-48: 38px;
-         --fs-64: 48px;
+        --fs-lg: 30px;
+        --fs-xl: 38px;
+         --fs-xxl: 48px;
     }
 }
 
 @media (max-width:400px) {
     :root {
-        --fs-38: 30px;
-        --fs-48:35px;
-         --fs-64: 33px;
+        --fs-lg: 30px;
+        --fs-xl:35px;
+         --fs-xxl: 33px;
     }
 }
